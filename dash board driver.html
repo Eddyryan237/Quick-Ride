@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="assest/lib/bootstrap-5.0.2/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assest/lib/icons/all.min.css">
+    <script src="assest/lib/bootstrap-5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+    <style>
+      body{
+        background-image: url(./assest/image/map.jpg);
+        background-position: cover;
+        background-size: cover;
+      }
+
+      .sidebar{
+          position: sticky;
+          top: 0;
+          left: 0;
+          bottom: 0;
+          width: 110px;
+          height: 95vh;
+          padding: 0 1.7rem;
+          color: #fff;
+          overflow: hidden;
+          transition: all 0.5s linear;
+          background: rgba(0, 0, 0, 0.674);
+      }
+      .sidebar:hover{
+          width: 240px;
+          transition: 0.5s;
+      }
+      .logo{
+          height: 80px;
+          padding: 12px;
+      }
+      .menu{
+          height: 88%;
+          position: relative;
+          list-style: none;
+          padding: 0;
+      }
+      .menu li{
+          padding: 1rem;
+          margin: 8px 0;
+          border-radius: 8px;
+          transition: all 0.5s ease;
+      }
+      .menu li:hover,
+      .active {
+          background: #e0e0e058;
+      }
+      .menu a{
+          color: #fff;
+          font-size: 14px;
+          text-decoration: none;
+          display: flex;
+          align-items: center;
+          gap: 1.5rem;
+      }
+      .menu a span{
+          overflow: hidden;
+      }
+      .menu a i{
+          font-size: 1.2rem;
+      }
+      .logout{
+          position: absolute;
+          bottom: 90px;
+          left: 0;
+          width: 100%;
+        }
+        .back:hover{
+            border-radius: 5px;
+            background-color: #eae1cb;
+            color: white; 
+        }
+        nav a{
+         color: rgb(88, 88, 88);
+        }
+    </style>
+</head>
+<body>
+    <div class="sidebar">
+        <div class="row pt-2">
+            <div class="col-12">
+                <a href="./Passenger home.html" class="back"><i class="fa fa-chevron-left text-dark" style="font-size: 1.3rem;"></i></a>
+                <a href="./Passenger home.html" class="back text-dark px-2" style="font-size: 1.3rem; text-decoration: none;"><strong>Back</strong></a>
+            </div>
+        </div>
+        <div class="logo">
+            <img src="./asset/image/logo-removebg-preview.png" height="50px" width="50px" alt="logo">
+        </div>
+        <ul class="menu">
+            <li class= "active">
+                <a href="index.html">
+                    <i class="fas fa-tachometer-alt"></i>
+                    <span>Dashboard</span>
+                </a>
+            </li>
+            <li>
+                <a href="profile.html">
+                    <i class="fas fa-user"></i>
+                    <span>Profile</span>
+                </a>
+            </li>
+            <li>
+                <a href="statistic.html">
+                    <i class="fa-solid fa-bell"></i>
+                    <span>Notification</span>
+                </a>
+            </li>
+            <li>
+                <a href="./withdrawal.html">
+                    <i class="fas fa-wallet"></i>
+                    <span>Withdraw</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <i class="fa-solid fa-language"></i>
+                    <span>Language</span>
+                </a>
+            </li>
+            
+            <li>
+                <a href="#">
+                    <i class="fa-solid fa-address-card"></i>
+                    <span>About Us</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <i class="fa-solid fa-circle-info"></i>
+                    <span>Help and Support</span>
+                </a>
+            </li>
+            <li class= "logout">
+                <a href="./index.html">
+                    <i class="fas fa-sign-out-alt"></i>
+                    <span>Logout</span>
+                </a>
+            </li>
+        </ul>
+    </div>
+    <nav class="fixed-bottom pt-3" style="border-top-left-radius: 20px; border-top-right-radius: 20px; background-color: white;">
+        <div class="row text-center">
+            <div class="col-3">
+                <a href="home.html" style="color: #EDAE10;">
+                    <i class="fa fa-home" style="font-size: 20px;"></i>
+                    <p>Home</p>
+                </a> 
+            </div>
+            <div class="col-3">
+                <a href="./notification.html">
+                    <i class="fa-solid fa-bell" style="font-size: 20px;"></i>
+                    <p>Notification</p>
+                </a>
+            </div>
+            <div class="col-3">
+                <a href="#">
+                    <i class="fas fa-wallet" style="font-size: 20px;"></i>
+                    <p>Account</p>
+                </a>
+            </div>
+            <div class="col-3">
+                <a href="profile.html">
+                    <i class="fa fa-sign-out-alt" style="font-size: 20px;"></i>
+                    <p>Logout</p>
+                </a>
+            </div>
+        </div>
+
+    </nav>
+    <script src="assest/lib/icons/all.min.js"></script>
+</body>
+</html>

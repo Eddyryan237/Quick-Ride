@@ -1,0 +1,21 @@
+*{
+    padding: 0;
+  margin: 0;
+}
+body{
+    background: black;
+}
+.sidebar{
+    background: white;
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 50px;
+}
+.sidebar .navbar ul{
+    list-style: none;
+}
+.sidebar{
+    border-top-right-radius: 5px solid;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+} 

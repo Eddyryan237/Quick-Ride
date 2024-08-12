@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assest/styles.css">
+    <link rel="stylesheet" href="assest/lib/bootstrap-5.0.2/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assest/lib/icons/all.min.css">
+    <script src="assest/lib/bootstrap-5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+    <title>Driver's  Homepage</title>
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="container m-0">
+            <header class="mt-5 fixed-top">
+                <div class="row text-center mx-2">
+                    <div class="icon col-2 p-2 m-0">
+                        <a href="./dash board Passenger.html">
+                            <div id="button-active" class = "icon-link py-2">
+                                <i class ="fa fa-bars" style="font-size: 1.4em;"></i>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-6">
+                        
+                    </div>
+                    <div class="icon col-2 p-2 m-0">
+                        <a href="#">
+                            <div id="button" class="icon-link py-2">
+                                <i class = "fas fa-search" style="font-size: 1.4em;"></i>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="icon col-2 p-2 m-0">
+                        <a href="#">
+                            <div id="button" class="icon-link py-2">
+                                <i class="fa-regular fa-bell" style="font-size: 1.4em;"></i>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </header>
+            <section class="px-2" style="margin-top: 430px; margin-bottom: 150px;">
+                <div class="row p-3">
+                    <div class="col-8 text-center pt-2" style="background-color: #07070779; border-radius: 10px;">
+                        <p style="color: white;"><strong>what kind of driver?</strong></p>
+                    </div>
+                    <div class="col-2">
+        
+                    </div>
+                    <div class="col-2">
+                        <i class="fa-solid fa-crosshairs" style="font-size: 2em; margin-top: 5px;"></i>
+                    </div> 
+                    
+                </div>
+                <div class="p-3 m-0 " style="background-color: #FFFBE7; border: 1px solid gold; border-radius: 10px;">
+                    <button class="btn btn-warning my-3 p-3 text-white text-center" data-bs-toggle="modal" data-bs-target="#exampleModal" style="width: 70%; background:  #EDAE10; border-radius: 10px; margin-left: 40px; align-content: center;"><strong>Taxi Driver</strong></button>
+                    <button class="btn btn-warning my-3 p-3 text-white text-center" data-bs-toggle="modal" data-bs-target="#exampleModal" style="width: 70%; background:  #EDAE10; border-radius: 10px; margin-left: 40px; align-content: center;"><strong>Personel Driver</strong></button>
+                           <div class="row text-center " style="width: 300px; border-radius: 10px; border: 1px solid #EDAE10; justify-items: center; margin-left: 2px;">   
+                    </div>
+                </div>
+               
+            </section>
+            <!-- Modal -->
+            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">Select Address</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="row text-center">
+                            <div class="col-12">
+                                <p>Enter Your Information</p>
+                            </div>
+                        </div>
+                        <form action="" class="p-3">
+                            <div class="form-group">
+                                <lable for="from">
+                                    <input type="text" class="form-control py-3 my-3" name="from" id="from" placeholder="From" required>
+                                </lable>
+                            </div>
+                            <div class="form-group">
+                                <lable><input type="text" class="form-control py-3 my-3" name="to" placeholder="To" required></lable>
+                            </div>
+                            <div class="form-group">
+                                <lable><input type="number" class="form-control py-3 my-3" name="number" placeholder="Plate Number" required></lable>
+                            </div>
+                            <div class="form-group">
+                                <lable><input type="number" class="form-control py-3 my-3" name="number" placeholder="Number of Seats Available" required></lable>
+                            </div>   
+                        </form>
+                    </div>
+                    <div class="modal-footer justify-content-center">
+                       <a href="./Driver hom2.html"><button type="button"  data-bs-toggle="modal" data-bs-target="#exampleModal" class="btn btn-warning py-2 px-4" style="color: white;">Submit</button></a>
+                    </div>
+                </div>
+                </div>
+            </div>
+            <nav class="fixed-bottom pt-3" style="border-top-left-radius: 20px; border-top-right-radius: 20px; background-color: white;">
+                <div class="row text-center">
+                    <div class="col-3">
+                        <a href="home.html"  style="color: #EDAE10; text-decoration: none;">
+                            <i class="fa fa-home" style="font-size: 20px; text-decoration: none;"></i>
+                            <p>Home</p>
+                        </a> 
+                    </div>
+                    <div class="col-3">
+                        <a href="./notification.html" style=" text-decoration: none;">
+                            <i class="fa-solid fa-bell" style="font-size: 20px;"></i>
+                            <p>Notification</p>
+                        </a>
+                    </div>
+                    <div class="col-3">
+                        <a href="payment.html" style=" text-decoration: none;">
+                            <i class="fas fa-wallet" style="font-size: 20px;"></i>
+                            <p>Payment</p>
+                        </a>
+                    </div>
+                    <div class="col-3">
+                        <a href="./index.html" style=" text-decoration: none;">
+                            <i class="fa-solid fa-sign-out-alt" style="font-size: 20px;"></i>
+                            <p>Logout</p>
+                        </a>
+                    </div>
+                </div>
+        
+            </nav>
+        </div>
+    </div>
+  
+<script src="assest/lib/icons/all.min.js"></script>
+</body>
+</html>
